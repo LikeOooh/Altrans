@@ -9,6 +9,10 @@
     src: url('../fonts/Unbounded-Bold.ttf') format(truetype)
 }
 
+img{
+    height: auto;
+}
+
 html,
 body,
 .content,
