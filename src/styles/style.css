@@ -9,6 +9,10 @@
     src: url('../fonts/Unbounded-Bold.ttf') format(truetype)
 }
 
+html {
+    width: 100%;
+}
+
 html,
 body,
 .content,
@@ -519,9 +523,11 @@ ul.desc li:nth-child(3) {
         height: 12px;
         margin-bottom: -3px;
     }
+
     .tel {
         display: none;
     }
+
     .tel.footer {
         width: 100%;
         display: flex;
@@ -534,6 +540,7 @@ ul.desc li:nth-child(3) {
     .tel.footer span {
         margin-right: 8px;
     }
+
     .tel.footer span:nth-child(4) {
         margin-right: 0;
     }
@@ -542,6 +549,7 @@ ul.desc li:nth-child(3) {
         display: block;
         height: 48px;
     }
+
     .content {
         display: grid;
         grid-template-rows: 14% auto 15.67%;
@@ -596,6 +604,7 @@ ul.desc li:nth-child(3) {
     footer {
         justify-content: space-evenly;
     }
+
     .info {
         height: 32px;
     }
@@ -607,6 +616,7 @@ ul.desc li:nth-child(3) {
         flex-direction: column;
         justify-content: space-between;
     }
+
     .adress span {
         height: 100%;
         margin-bottom: -1rem;
