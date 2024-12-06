@@ -9,10 +9,6 @@
     src: url('../fonts/Unbounded-Bold.ttf') format(truetype)
 }
 
-img{
-    width: auto;
-}
-
 html,
 body,
 .content,
@@ -156,7 +152,7 @@ main {
 
 .brands {
     height: 15%;
-    width: 100%;
+    width: auto;
 }
 
 ul.desc {
@@ -273,6 +269,7 @@ ul.desc li:nth-child(3) {
 
     .brands {
         height: 17%;
+        width: auto;
     }
 
     ul.desc {
@@ -346,6 +343,7 @@ ul.desc li:nth-child(3) {
 
     .brands {
         height: 38.2%;
+        width: auto;
     }
 
     ul.desc {
@@ -461,6 +459,7 @@ ul.desc li:nth-child(3) {
 
     .brands {
         height: 26.3%;
+        width: auto;
     }
 
     ul.desc {
@@ -584,6 +583,7 @@ ul.desc li:nth-child(3) {
 
     .brands {
         height: 32.16%;
+        width: auto;
     }
 
     ul.desc {
