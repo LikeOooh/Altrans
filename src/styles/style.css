@@ -1,0 +1,632 @@
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../fonts/Unbounded-Regular.ttf') format(truetype)
+}
+
+@font-face {
+    font-family: 'Unbounded Bold';
+    font-weight: 600;
+    src: url('../fonts/Unbounded-Bold.ttf') format(truetype)
+}
+
+html,
+body,
+.content,
+.adress,
+.year {
+    height: 100%;
+}
+
+body {
+    margin: 0 10.625vw;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #284C55;
+    background-blend-mode: multiply;
+    color: #FFFFFF;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 16.667% 66.666% 16.667%;
+}
+
+header,
+main,
+footer,
+.info,
+.adress,
+.services,
+.brands,
+ul.desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    width: 100%;
+}
+
+.year {
+    justify-content: flex-end;
+}
+
+header,
+footer,
+.info {
+    align-items: center;
+}
+
+#phone,
+.text-footer.short {
+    display: none;
+}
+
+.tel,
+.block-2 p,
+ul.desc li {
+    font-family: 'Unbounded Bold';
+}
+
+ul.desc li,
+.block-2 p,
+.text-footer {
+    text-transform: uppercase;
+}
+
+.tel {
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: -0.75rem;
+}
+
+.tel span {
+    margin-right: 12px;
+}
+
+.tel span:nth-child(4) {
+    margin-right: 0;
+}
+
+.tel.footer {
+    display: none;
+}
+
+.code,
+.point {
+    color: #666767;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    position: relative;
+    padding-bottom: 1.5vh;
+    box-sizing: border-box;
+}
+
+.block-1,
+.block-2 {
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.block-1 {
+    grid-column: 1/5;
+    justify-content: center;
+    background-color: #5F90BD;
+    position: relative;
+}
+
+.block-2 {
+    grid-column: 5/13;
+    background-image: url(../images/Peugeot.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.block-2 p {
+    width: 30vw;
+    margin-left: 60px;
+    font-size: 3.625rem;
+    color: #77ACDC;
+}
+
+.services {
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 75.5%;
+    height: 83%;
+    padding: 0;
+}
+
+.brands {
+    height: 15%;
+    width: 100%;
+}
+
+ul.desc {
+    flex-direction: column;
+    height: 48%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.3px;
+    list-style-position: inside;
+}
+
+ul.desc li {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+ul.desc li:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.adress,
+.year {
+    font-size: 1.125rem;
+    font-family: 'Unbounded';
+}
+
+.adress div {
+    margin-right: 20px;
+}
+
+#cone {
+    position: absolute;
+    bottom: -1vh;
+    right: 2.5vw;
+    height: 23.33vh;
+}
+
+.year {
+    display: block;
+}
+
+
+@media all and (min-width: 1366px) and (max-width: 1919px) {
+
+    body {
+        margin: 0 8.71vw;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    main {
+        padding-bottom: 2vh;
+    }
+
+    .block-2 p {
+        font-size: 2.625rem;
+    }
+
+    ul.desc {
+        height: 53.39%;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+
+    .adress,
+    .year {
+        font-size: 1rem;
+    }
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1365px) {
+    body {
+        margin: 0 7.6vw;
+    }
+
+    header img {
+        height: 36px;
+    }
+
+    .tel {
+        font-size: 1.25rem;
+    }
+
+    main {
+        column-gap: 20px;
+        padding-bottom: 3vh;
+    }
+
+    .block-1 {
+        grid-column: 1/6;
+    }
+
+    .block-2 {
+        grid-column: 6/13;
+        background-position: right;
+    }
+
+    .block-2 p {
+        width: 20vw;
+        margin-left: 34px;
+        font-size: 2rem;
+    }
+
+    .services {
+        width: 77%;
+        height: 83%;
+    }
+
+    .brands {
+        height: 17%;
+    }
+
+    ul.desc {
+        height: 46%;
+        font-size: 1.25rem;
+        line-height: 1.5625rem;
+    }
+
+    .adress,
+    .year {
+        font-size: 0.875rem;
+    }
+
+    #cone {
+        height: 19.7vh;
+        right: 5.8vw;
+    }
+}
+
+
+@media all and (min-width: 720px) and (max-width: 1023px) {
+
+    body {
+        margin: 0 3.3vw;
+    }
+
+    header img {
+        height: 36px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-rows: 11.6% auto 11.6%;
+    }
+
+    .tel {
+        font-size: 1rem;
+    }
+
+    main {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 302px auto;
+        gap: 20px;
+        padding-bottom: 2vh;
+        box-sizing: border-box;
+    }
+
+    .block-1 {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    .block-2 {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    .block-2 p {
+        width: 52vw;
+        margin-left: 34px;
+        font-size: 2rem;
+    }
+
+    .services {
+        width: 88.1%;
+        min-height: 238px;
+        padding: 0;
+    }
+
+    .brands {
+        height: 38.2%;
+    }
+
+    ul.desc {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        height: 46.2%;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+
+    ul.desc li:nth-child(3) {
+        grid-column: 2/3;
+        margin-top: -2rem;
+    }
+
+    .info {
+        height: 42%;
+    }
+
+    .adress,
+    .year {
+        font-size: 0.875rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adress {
+        justify-content: space-between;
+    }
+
+    .year {
+        justify-content: flex-end;
+    }
+
+    #cone {
+        right: 8vw;
+        height: 14.8vh;
+    }
+
+}
+
+@media all and (min-width: 375px) and (max-width: 719px) {
+    body {
+        margin: 0 3.6vw;
+    }
+
+    header img {
+        height: 28.47px;
+    }
+
+    .info img {
+        height: 12px;
+    }
+
+    .tel {
+        display: none;
+    }
+
+    .tel.footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        margin-top: -0.6875rem;
+    }
+
+    .tel.footer span {
+        margin-right: 8px;
+    }
+
+    #phone {
+        display: block;
+        height: 48px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-rows: 13.42% auto 13.42%;
+    }
+
+    main {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 273px auto;
+        row-gap: 12px;
+        padding-bottom: 3.3vh;
+    }
+
+    .block-1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .block-2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .block-2 p {
+        width: 48.5vw;
+        margin-left: 22px;
+        font-size: 1.1875rem;
+    }
+
+    .services {
+        width: 88.5%;
+        height: 209px;
+        padding: 0;
+    }
+
+    .brands {
+        height: 26.3%;
+    }
+
+    ul.desc {
+        height: 57.4%;
+        width: 95%;
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    footer {
+        justify-content: space-evenly;
+    }
+
+    .info {
+        height: 34.8%;
+    }
+
+    .adress,
+    .year {
+        font-size: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text-footer.long {
+        display: none;
+    }
+
+    .text-footer.short {
+        display: inline;
+    }
+
+    .year {
+        justify-content: flex-end;
+    }
+
+    #cone {
+        right: 7.2vw;
+        height: 12.8vh;
+        bottom: 0;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 374px) {
+    html {
+        min-width: 291px;
+        min-height: 568px;
+    }
+
+    body {
+        margin: 0 4.5vw;
+    }
+
+    header img {
+        height: 23.73px;
+    }
+
+    .info img {
+        height: 12px;
+        margin-bottom: -3px;
+    }
+    .tel {
+        display: none;
+    }
+    .tel.footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.9375rem;
+        line-height: 1.625rem;
+        margin-top: -0.5rem;
+    }
+
+    .tel.footer span {
+        margin-right: 8px;
+    }
+    .tel.footer span:nth-child(4) {
+        margin-right: 0;
+    }
+
+    #phone {
+        display: block;
+        height: 48px;
+    }
+    .content {
+        display: grid;
+        grid-template-rows: 14% auto 15.67%;
+    }
+
+    main {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 183px auto;
+        row-gap: 8px;
+        padding-bottom: 2vh;
+    }
+
+    .block-1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .block-2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .block-2 p {
+        width: 50.9vw;
+        margin-left: 12px;
+        font-size: 1.0625rem;
+    }
+
+    .services {
+        width: 88.6%;
+        height: 143px;
+        padding: 0;
+    }
+
+    .brands {
+        height: 32.16%;
+    }
+
+    ul.desc {
+        height: 58.74%;
+        width: 95%;
+        font-size: 0.835rem;
+        line-height: 1.0625rem;
+    }
+
+    ul.desc li {
+        margin-bottom: 8px;
+    }
+
+    footer {
+        justify-content: space-evenly;
+    }
+    .info {
+        height: 32px;
+    }
+
+    .adress,
+    .year {
+        font-size: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .adress span {
+        height: 100%;
+        margin-bottom: -1rem;
+    }
+
+    .text-footer.long {
+        display: none;
+    }
+
+    .text-footer.short {
+        display: inline;
+    }
+
+    .year {
+        justify-content: flex-end;
+    }
+
+    #cone {
+        right: 15vw;
+        height: 10.5vh;
+        bottom: 0;
+    }
+}
