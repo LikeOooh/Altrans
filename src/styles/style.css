@@ -164,6 +164,7 @@ main {
     width: 100%;
 }
 .brands img {
+    height: 100%;
     width: auto;
 }
 ul.desc {
