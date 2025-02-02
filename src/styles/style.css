@@ -61,7 +61,7 @@ body {
     color: #666767;
 }
 
-.phone_icon {
+.header__container a, .phone_icon {
     display: none;
 }
 

@@ -321,8 +321,11 @@
         display: none;
     }
 
-    .phone_icon {
+    .header__container a, .phone_icon {
         display: block;
+    }
+
+    .phone_icon {
         min-height: 48px;
     }
 
