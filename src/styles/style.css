@@ -26,6 +26,7 @@ img {
 }
 
 body {   
+    min-width: 320px;
     font-family: "Unbounded", sans-serif; 
     color: #FFFFFF;
     min-height: 100%;
