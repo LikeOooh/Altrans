@@ -1,12 +1,13 @@
 html {
     min-height: 100%;
+    height: 100%;
     max-width: 100%;
     box-sizing: border-box;
     background-image: url(../images/bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #284C55;
+    background-color: #293649;
     background-blend-mode: multiply;
 }
 
