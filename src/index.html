@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/media.css">
     <title>Altrans</title>
 </head>
 
 <body>
-    <div class="content">
-        <header>
+    <header class="header">
+        <div class="header__container">
             <img src="./images/logo.png">
-            <div class="tel">
+            <div class="tel tel__header">
                 <span class="code">(342)</span>
                 <span class="phone">204-00-44</span>
                 <span class="point">•</span>
                 <span class="phone">204-00-54</span>
             </div>
-            <img id="phone" src="./images/phone.png">
-        </header>
-        <main>
-            <div class="block-1">
-                <div class="services">
-                    <div class="brands">
-                        <img src="./images/Logo-Peugeot.png">
-                        <img src="./images/Logo-Citroen.png">
-                        <img src="./images/Logo-Renault.png">
-                    </div>
-                    <ul class="desc">
-                        <li>Диагностика электронных систем</li>
-                        <li>Обслуживание и&nbspремонт</li>
-                        <li>Запчасти</li>
-                    </ul>
+            <a href="tel:+73422040044"><img class="phone_icon" src="./images/phone.png"></a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="block__left">
+            <div class="block__left__wrapper">
+                <div class="block__left__brands">
+                    <img src="./images/Logo-Peugeot.png">
+                    <img src="./images/Logo-Citroen.png">
+                    <img src="./images/Logo-Renault.png">
                 </div>
+                <ul class="block__left__services">
+                    <li>Диагностика электронных систем</li>
+                    <li>Обслуживание и&nbspремонт</li>
+                    <li>Запчасти</li>
+                </ul>
             </div>
-
-            <div class="block-2">
+        </div>
+        <div class="block__right">
+            <div class="block__right_image">
                 <p>Сайт в&nbspразработке</p>
             </div>
-            <img id="cone" src="./images/Cone.png">
-        </main>
-        <footer>
-            <div class="tel footer">
+        </div>
+        <img class="cone" src="./images/Cone.png">
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="tel tel__footer">
                 <span class="code">(342)</span>
                 <span class="phone">204-00-44</span>
                 <span class="point">•</span>
@@ -52,21 +59,21 @@
                 <div class="adress">
                     <div>
                         <img src="./images/map-pin.png">&nbsp
-                        <span class="text-footer">Пермь, Норильская, 8</span>
+                        <span class="text__footer location"><a target="_blank" href="https://go.2gis.com/Z51Fl">Пермь, Норильская, 8</a></span>
                     </div>
                     <div>
                         <img src="./images/clock.png">&nbsp
-                        <span class="text-footer long">Понедельник — пятница с 09:00 до 19:00 </span>
-                        <span class="text-footer short">ПН — ПТ, с 09:00 до 19:00 </span>
+                        <span class="text__footer long">Понедельник — пятница с 09:00 до 19:00 </span>
+                        <span class="text__footer short">ПН — ПТ, с 09:00 до 19:00 </span>
                     </div>
                 </div>
                 <div class="year">
                     <script>document.write(new Date().getFullYear())</script>
                 </div>
             </div>
-        </footer>
+        </div>
 
-    </div>
+    </footer>
 
 </body>
 
